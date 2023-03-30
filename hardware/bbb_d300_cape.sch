@@ -9674,13 +9674,13 @@ vpme.de   rev 1.0</text>
 <pinref part="T2" gate="G$1" pin="B"/>
 </segment>
 </net>
-<net name="ERR3" class="0">
+<net name="ERR3V3" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="T2" gate="G$1" pin="C"/>
 <wire x1="269.24" y1="147.32" x2="269.24" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="142.24" x2="254" y2="142.24" width="0.1524" layer="91"/>
-<label x="254" y="142.24" size="1.778" layer="95"/>
+<label x="251.46" y="142.24" size="1.778" layer="95"/>
 <junction x="269.24" y="142.24"/>
 </segment>
 <segment>
@@ -9863,7 +9863,7 @@ vpme.de   rev 1.0</text>
 <pinref part="T1" gate="G$1" pin="B"/>
 </segment>
 </net>
-<net name="HOME3" class="0">
+<net name="HOME3V3" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="T1" gate="G$1" pin="C"/>
@@ -9974,7 +9974,7 @@ vpme.de   rev 1.0</text>
 <pinref part="T4" gate="G$1" pin="B"/>
 </segment>
 </net>
-<net name="LENGTH3" class="0">
+<net name="LENGTH3V3" class="0">
 <segment>
 <pinref part="R16" gate="G$1" pin="1"/>
 <pinref part="T3" gate="G$1" pin="C"/>
@@ -9984,9 +9984,9 @@ vpme.de   rev 1.0</text>
 <junction x="269.24" y="86.36"/>
 </segment>
 <segment>
-<pinref part="PCB2" gate="G$1" pin="P8.11"/>
-<wire x1="129.54" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<label x="132.08" y="114.3" size="1.778" layer="95"/>
+<pinref part="PCB2" gate="G$1" pin="P8.8"/>
+<wire x1="129.54" y1="121.92" x2="134.62" y2="121.92" width="0.1524" layer="91"/>
+<label x="132.08" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IN5" class="0">
@@ -10020,7 +10020,7 @@ vpme.de   rev 1.0</text>
 <pinref part="T4" gate="G$1" pin="C"/>
 <wire x1="269.24" y1="63.5" x2="269.24" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="58.42" x2="254" y2="58.42" width="0.1524" layer="91"/>
-<label x="251.46" y="58.42" size="1.778" layer="95"/>
+<label x="254" y="58.42" size="1.778" layer="95"/>
 <pinref part="TP11" gate="G$1" pin="TP"/>
 <junction x="269.24" y="58.42"/>
 </segment>

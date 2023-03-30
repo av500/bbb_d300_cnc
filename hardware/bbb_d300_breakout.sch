@@ -4879,7 +4879,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="!frames" deviceset="DINA4_L_DOCSMAL" device=""/>
 <part name="BBB_USB" library="00vp" deviceset="PINHD-1X5" device=""/>
-<part name="SW1" library="00nikis" deviceset="JTP1236" device=""/>
+<part name="RESET" library="00nikis" deviceset="JTP1236" device=""/>
 <part name="BBB" library="pinhead" deviceset="PINHD-2X13" device=""/>
 <part name="X2" library="00vp" deviceset="RJ45" device=""/>
 <part name="X3" library="00vp" deviceset="RJ45" device=""/>
@@ -4907,7 +4907,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <attribute name="VALUE" x="177.8" y="15.24" size="1.778" layer="96"/>
 </instance>
 <instance part="BBB_USB" gate="G$1" x="58.42" y="38.1" rot="MR0"/>
-<instance part="SW1" gate="G$1" x="63.5" y="7.62" rot="R270"/>
+<instance part="RESET" gate="G$1" x="63.5" y="7.62" rot="R270"/>
 <instance part="BBB" gate="A" x="101.6" y="33.02"/>
 <instance part="X2" gate="G$1" x="30.48" y="83.82" rot="MR0"/>
 <instance part="X3" gate="G$1" x="60.96" y="83.82"/>
@@ -5012,7 +5012,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="S"/>
+<pinref part="RESET" gate="G$1" pin="S"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -5303,7 +5303,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </net>
 <net name="BBB_RSTN" class="0">
 <segment>
-<pinref part="SW1" gate="G$1" pin="P"/>
+<pinref part="RESET" gate="G$1" pin="P"/>
 <wire x1="58.42" y1="7.62" x2="50.8" y2="7.62" width="0.1524" layer="91"/>
 <label x="50.8" y="5.08" size="1.778" layer="95"/>
 </segment>

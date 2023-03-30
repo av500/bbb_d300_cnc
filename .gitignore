@@ -10,5 +10,5 @@ hardware/*.GKO
 hardware/*.dri
 hardware/*.gpi
 hardware/*.*#*
-D300/pru_stepper.var
-D300/pru_stepper.var.bak
+D300/pru-stepper.var
+D300/pru-stepper.var.bak

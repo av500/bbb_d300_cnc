@@ -58,10 +58,11 @@ fi
 # sure the pin starts with a known value as soon as possible.
 
 sudo $(which config-pin) -f - <<- EOF
-	P8.07	out	# gpio2.2	Enable System
-	P8.09	in	# gpio2.5	STOPin
-	P8.10	in	# gpio2.4	HOME ALL AXES
-	
+	P8.07	out	# Enable System
+        P8.08   in      # Tool Length Sensor
+	P8.09	in	# E-STOP in
+	P8.10	in	# HOME ALL AXES
+
 	P8.13	out	# X STEP
 	P8.12	out	# X DIR
 	P8.15	out	# Y STEP

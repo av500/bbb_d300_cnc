@@ -1,0 +1,12 @@
+hardware/*.GTL
+hardware/*.GTO
+hardware/*.GTS
+hardware/*.GBL
+hardware/*.GBS
+hardware/*.GTS
+hardware/*.TXT
+hardware/*.GBO
+hardware/*.GKO
+hardware/*.dri
+hardware/*.gpi
+hardware/*.*#*

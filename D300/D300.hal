@@ -35,7 +35,7 @@ loadrt [EMCMOT]EMCMOT servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[TRAJ]AX
 
 
 # load low-level drivers
-loadrt hal_bb_gpio output_pins=107 input_pins=109,110
+loadrt hal_bb_gpio output_pins=107 input_pins=108,109,110
 loadrt [PRUCONF](DRIVER) prucode=$(HAL_RTMOD_DIR)/[PRUCONF](PRUBIN) [PRUCONF](CONFIG) halname=hpg
 #(JP) Not suing PID loop so comment out
 loadrt pid count=3
@@ -228,29 +228,21 @@ net all-home => axis.2.home-sw-in
 
 # this pin is output on DB25-1
 # it is also used to enable the LVC541 driver/receiver on the interface board
-net machine-on bb_gpio.p8.out-07 
-#=> halui.machine.is-on
+net machine-on bb_gpio.p8.out-07 => halui.machine.is-on
 setp bb_gpio.p8.out-07.invert 1
 
-# this input signal must be active LOW to allow the system to energize.
-# this should be fed through an NC STOP type switch from DB25-1 to DB25-10
-#net estop-in bb_gpio.p8.in-09 => iocontrol.0.emc-enable-in
-#setp bb_gpio.p8.in-09.invert 1
-#newsig test bit
-#sets test 1
-#net test iocontrol.0.emc-enable-in
-#net estop-loop iocontrol.0.user-enable-out iocontrol.0.emc-enable-in
-#setp iocontrol.0.emc-enable-in true
-
 #probe input
-#net probe motion.probe-input <= bb_gpio.p8.in-18
-#setp bb_gpio.p8.in-18.invert 1
+net probe motion.probe-input <= bb_gpio.p8.in-08
+#setp bb_gpio.p8.in-08.invert 1
 
 # this input signal must be active LOW to allow the system to energize.
 # this should be fed through an NC STOP type switch from DB25-1 to DB25-10
 net estop-in bb_gpio.p8.in-09 => iocontrol.0.emc-enable-in
 #setp bb_gpio.p8.in-09.invert 1
 
-
-
+loadusr -W hal_manualtoolchange
+net tool-change iocontrol.0.tool-change => hal_manualtoolchange.change
+net tool-changed iocontrol.0.tool-changed <= hal_manualtoolchange.changed
+net tool-number iocontrol.0.tool-prep-number => hal_manualtoolchange.number
+net tool-prepare-loopback iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
 

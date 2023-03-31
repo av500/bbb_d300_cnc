@@ -6,24 +6,13 @@
   <object class="GtkWindow" id="window1">
     <child>
       <object class="GtkTable" id="GtkTable_table1">
-        <property name="width_request">100</property>
+        <property name="width_request">120</property>
         <property name="height_request">300</property>
         <property name="visible">True</property>
         <property name="n_rows">10</property>
         <property name="n_columns">2</property>
-        <property name="column_spacing">5</property>
+        <property name="column_spacing">0</property>
         <property name="homogeneous">False</property>
-        <child>
-          <object class="GtkLabel" id="label5">
-            <property name="visible">True</property>
-            <property name="label" translatable="yes">Axis</property>
-          </object>
-          <packing>
-            <property name="right_attach">2</property>
-            <property name="top_attach">1</property>
-            <property name="bottom_attach">2</property>
-          </packing>
-        </child>
         <child>
           <object class="GtkLabel" id="label_X">
             <property name="visible">True</property>
@@ -34,8 +23,8 @@
             </attributes>
           </object>
           <packing>
-            <property name="top_attach">2</property>
-            <property name="bottom_attach">3</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
           </packing>
         </child>
         <child>
@@ -48,8 +37,8 @@
             </attributes>
           </object>
           <packing>
-            <property name="top_attach">3</property>
-            <property name="bottom_attach">4</property>
+            <property name="top_attach">2</property>
+            <property name="bottom_attach">3</property>
           </packing>
         </child>
         <child>
@@ -62,12 +51,24 @@
             </attributes>
           </object>
           <packing>
-            <property name="top_attach">4</property>
-            <property name="bottom_attach">5</property>
+            <property name="top_attach">3</property>
+            <property name="bottom_attach">4</property>
           </packing>
         </child>
         <child>
           <object class="HAL_LED" id="x_led1">
+            <property name="visible">True</property>
+            <property name="led_shape">2</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
+            <property name="top_attach">1</property>
+            <property name="bottom_attach">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="HAL_LED" id="y_led2">
             <property name="visible">True</property>
             <property name="led_shape">2</property>
           </object>
@@ -79,7 +80,7 @@
           </packing>
         </child>
         <child>
-          <object class="HAL_LED" id="y_led2">
+          <object class="HAL_LED" id="z_led3">
             <property name="visible">True</property>
             <property name="led_shape">2</property>
           </object>
@@ -91,32 +92,34 @@
           </packing>
         </child>
         <child>
-          <object class="HAL_LED" id="z_led3">
-            <property name="visible">True</property>
-            <property name="led_shape">2</property>
-          </object>
-          <packing>
-            <property name="left_attach">1</property>
-            <property name="right_attach">2</property>
-            <property name="top_attach">4</property>
-            <property name="bottom_attach">5</property>
-          </packing>
-        </child>
-        <child>
           <object class="GtkLabel" id="label6">
             <property name="visible">True</property>
             <property name="label" translatable="yes">Increment</property>
           </object>
           <packing>
             <property name="right_attach">2</property>
-            <property name="top_attach">5</property>
-            <property name="bottom_attach">6</property>
+            <property name="top_attach">4</property>
+            <property name="bottom_attach">5</property>
           </packing>
         </child>
         <child>
           <object class="GtkLabel" id="label7">
             <property name="visible">True</property>
-            <property name="label" translatable="yes">0.010</property>
+            <property name="label" translatable="yes">0.01</property>
+            <attributes>
+              <attribute name="weight" value="bold"/>
+              <attribute name="scale" value="1.500000"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="top_attach">5</property>
+            <property name="bottom_attach">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label8">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">0.10</property>
             <attributes>
               <attribute name="weight" value="bold"/>
               <attribute name="scale" value="1.500000"/>
@@ -128,9 +131,9 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="label8">
+          <object class="GtkLabel" id="label9">
             <property name="visible">True</property>
-            <property name="label" translatable="yes">0.100</property>
+            <property name="label" translatable="yes">0.20</property>
             <attributes>
               <attribute name="weight" value="bold"/>
               <attribute name="scale" value="1.500000"/>
@@ -142,9 +145,9 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="label9">
+          <object class="GtkLabel" id="label10">
             <property name="visible">True</property>
-            <property name="label" translatable="yes">0.200</property>
+            <property name="label" translatable="yes">1.00</property>
             <attributes>
               <attribute name="weight" value="bold"/>
               <attribute name="scale" value="1.500000"/>
@@ -153,20 +156,6 @@
           <packing>
             <property name="top_attach">8</property>
             <property name="bottom_attach">9</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLabel" id="label10">
-            <property name="visible">True</property>
-            <property name="label" translatable="yes">1.000</property>
-            <attributes>
-              <attribute name="weight" value="bold"/>
-              <attribute name="scale" value="1.500000"/>
-            </attributes>
-          </object>
-          <packing>
-            <property name="top_attach">9</property>
-            <property name="bottom_attach">10</property>
           </packing>
         </child>
         <child>
@@ -179,12 +168,26 @@
           <packing>
             <property name="left_attach">1</property>
             <property name="right_attach">2</property>
+            <property name="top_attach">5</property>
+            <property name="bottom_attach">6</property>
+          </packing>
+        </child>
+        <child>
+          <object class="HAL_LED" id="Increment_led2">
+            <property name="visible">True</property>
+            <property name="on_color">yellow</property>
+            <property name="led_shape">0</property>
+            <property name="led_size">9</property>
+          </object>
+          <packing>
+            <property name="left_attach">1</property>
+            <property name="right_attach">2</property>
             <property name="top_attach">6</property>
             <property name="bottom_attach">7</property>
           </packing>
         </child>
         <child>
-          <object class="HAL_LED" id="Increment_led2">
+          <object class="HAL_LED" id="Increment_led3">
             <property name="visible">True</property>
             <property name="on_color">yellow</property>
             <property name="led_shape">0</property>
@@ -198,7 +201,7 @@
           </packing>
         </child>
         <child>
-          <object class="HAL_LED" id="Increment_led3">
+          <object class="HAL_LED" id="Increment_led4">
             <property name="visible">True</property>
             <property name="on_color">yellow</property>
             <property name="led_shape">0</property>
@@ -212,20 +215,75 @@
           </packing>
         </child>
         <child>
-          <object class="HAL_LED" id="Increment_led4">
+          <object class="GtkButton" id="button_touch">
+            <property name="label" translatable="yes">Tool Touch Off</property>
             <property name="visible">True</property>
-            <property name="on_color">yellow</property>
-            <property name="led_shape">0</property>
-            <property name="led_size">9</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="related_action">hal_action_touch</property>
           </object>
           <packing>
-            <property name="left_attach">1</property>
             <property name="right_attach">2</property>
             <property name="top_attach">9</property>
             <property name="bottom_attach">10</property>
           </packing>
         </child>
+        <child>
+          <object class="GtkButton" id="button_foo">
+            <property name="label" translatable="yes">Foo</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="related_action">hal_action_foo</property>
+          </object>
+          <packing>
+            <property name="right_attach">2</property>
+            <property name="top_attach">10</property>
+            <property name="bottom_attach">11</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_bar">
+            <property name="label" translatable="yes">Bar</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="related_action">hal_action_bar</property>
+          </object>
+          <packing>
+            <property name="right_attach">2</property>
+            <property name="top_attach">11</property>
+            <property name="bottom_attach">12</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_baz">
+            <property name="label" translatable="yes">Baz</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="related_action">hal_action_baz</property>
+          </object>
+          <packing>
+            <property name="right_attach">2</property>
+            <property name="top_attach">12</property>
+            <property name="bottom_attach">13</property>
+          </packing>
+        </child>
+
       </object>
     </child>
+  </object>
+  <object class="EMC_Action_MDI" id="hal_action_touch">
+    <property name="command">o100 call</property>
+  </object>
+  <object class="EMC_Action_MDI" id="hal_action_foo">
+    <property name="command">o100 call</property>
+  </object>
+  <object class="EMC_Action_MDI" id="hal_action_bar">
+    <property name="command">o100 call</property>
+  </object>
+  <object class="EMC_Action_MDI" id="hal_action_baz">
+    <property name="command">o100 call</property>
   </object>
 </interface>

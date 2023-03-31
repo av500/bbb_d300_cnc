@@ -1278,13 +1278,13 @@
 </polygon>
 </package>
 <package name="RJ45">
-<wire x1="-7.85" y1="-8" x2="10.55" y2="-8" width="0.127" layer="21"/>
-<wire x1="10.55" y1="-8" x2="10.55" y2="8" width="0.127" layer="21"/>
-<wire x1="-7.85" y1="8" x2="10.55" y2="8" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="-8" x2="10.5" y2="-8" width="0.127" layer="21"/>
+<wire x1="10.5" y1="-8" x2="10.5" y2="8" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="8" x2="10.5" y2="8" width="0.127" layer="21"/>
 <pad name="P$1" x="3.05" y="-7.75" drill="1.7"/>
 <pad name="P$2" x="3.05" y="7.75" drill="1.7"/>
-<hole x="0" y="5.715" drill="3.2"/>
-<hole x="0" y="-5.715" drill="3.2"/>
+<hole x="0" y="5.715" drill="3"/>
+<hole x="0" y="-5.715" drill="3"/>
 <pad name="P7" x="6.35" y="-3.175" drill="0.9"/>
 <pad name="P8" x="8.89" y="-4.445" drill="0.9"/>
 <pad name="P6" x="8.89" y="-1.905" drill="0.9"/>
@@ -1293,10 +1293,12 @@
 <pad name="P1" x="6.35" y="4.445" drill="0.9" rot="R180"/>
 <pad name="P3" x="6.35" y="1.905" drill="0.9" rot="R180"/>
 <pad name="P4" x="8.89" y="0.635" drill="0.9" rot="R180"/>
-<wire x1="-7.85" y1="-8" x2="-7.85" y2="8" width="0.127" layer="21"/>
-<wire x1="-7.5" y1="4.5" x2="-4" y2="4.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="4.5" x2="-4" y2="-4.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="-4.5" x2="-7.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="-8" x2="-10.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="-4.5" x2="-10.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="4.5" x2="-10.5" y2="8" width="0.127" layer="21"/>
+<wire x1="-10.5" y1="4.5" x2="-7" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="4.5" x2="-7" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-4.5" x2="-10.5" y2="-4.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
